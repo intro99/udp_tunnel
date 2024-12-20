@@ -344,7 +344,8 @@ public:
             *offset += diff;
         }
 
-        char *answer = (char*)memmem(message + *offset, length, &this->answer_footer.name_ref, sizeof(unsigned short) * 3);
+        char *answer = (char*)memmem(message + *offset, length, &this->answer_footer.name_ref, sizeof(unsigned short));
+
 
         if (answer == nullptr)
         {

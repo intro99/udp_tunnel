@@ -19,6 +19,7 @@
 #include <getopt.h>
 #include <vector>
 #include <thread>
+#include <cctype>
 
 #ifdef AF_PACKET
     // Linux

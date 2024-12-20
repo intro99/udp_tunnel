@@ -85,7 +85,7 @@ private:
             fprintf(stderr, "Failed to initiate DTLS handshake: ");
 
             int reason = ERR_GET_REASON(ERR_peek_error());
-            bool fatal = false;
+            [[maybe_unused]] bool fatal = false;
             switch (reason)
             {
                 default:
